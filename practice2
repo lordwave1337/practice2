@@ -4,6 +4,7 @@ public class Main {
         gg0(0);
         pirozhok(-12);
         printString("Hello, world!", 3);
+        yearVis(2023);
     }
     public static boolean tfMethod (int a, int b) {
         a = 10;
@@ -27,6 +28,19 @@ public class Main {
     public static void printString (String word, int times){
         for (int i = 0; i < times; i++ ){
             System.out.println(word);
+        }
+    }
+    public static boolean yearVis (int year) {
+        if (year % 4 != 0) {
+            return false;
+
+        } else if (year % 100 != 0){
+            return true;
+        } else if (year % 400 != 0){
+            return false;
+        }
+        else {
+            return true;
         }
     }
 }
