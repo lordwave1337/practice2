@@ -1,0 +1,32 @@
+public class Main {
+    public static void main(String[] args) {
+        tfMethod(10,20);
+        gg0(0);
+        pirozhok(-12);
+        printString("Hello, world!", 3);
+    }
+    public static boolean tfMethod (int a, int b) {
+        a = 10;
+        b = 20;
+        if (a + b >= 10 && a + b <= 20) {
+            return true;
+        }
+        return false;
+    }
+    public static void gg0 (int x) {
+        if (x >= 0) {
+            System.out.println("Положительное");
+        } else System.out.println("Отрицательное");
+    }
+    public static boolean pirozhok (int x) {
+        if (x < 0) {
+            return false;
+        }
+        return true;
+    }
+    public static void printString (String word, int times){
+        for (int i = 0; i < times; i++ ){
+            System.out.println(word);
+        }
+    }
+}
